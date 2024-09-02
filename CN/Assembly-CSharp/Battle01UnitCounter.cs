@@ -1,0 +1,29 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Battle01UnitCounter
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 9C8288CC-5112-4EB9-B5CD-8D0227EBD883
+// Assembly location: C:\r\PotK-Assembly-CSharp\CN\Assembly-CSharp.dll
+
+using UnityEngine;
+
+#nullable disable
+public class Battle01UnitCounter : NGBattleMenuBase
+{
+  [SerializeField]
+  private SelectParts selectParts;
+  [SerializeField]
+  private UILabel count_txt;
+
+  public void setCount(int c)
+  {
+    if (c <= 0)
+    {
+      this.selectParts.setValue(1);
+    }
+    else
+    {
+      this.selectParts.setValue(0);
+      this.setText(this.count_txt, c);
+    }
+  }
+}

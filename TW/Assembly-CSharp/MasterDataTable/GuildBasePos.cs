@@ -1,0 +1,29 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: MasterDataTable.GuildBasePos
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 1057B608-EE69-47D4-8399-FD66F6FD63A9
+// Assembly location: C:\r\PotK-Assembly-CSharp\TW\Assembly-CSharp.dll
+
+using System;
+
+#nullable disable
+namespace MasterDataTable
+{
+  [Serializable]
+  public class GuildBasePos
+  {
+    public int ID;
+    public float baseXpos;
+    public float baseYpos;
+
+    public static GuildBasePos Parse(MasterDataReader reader)
+    {
+      return new GuildBasePos()
+      {
+        ID = reader.ReadInt(),
+        baseXpos = reader.ReadFloat(),
+        baseYpos = reader.ReadFloat()
+      };
+    }
+  }
+}

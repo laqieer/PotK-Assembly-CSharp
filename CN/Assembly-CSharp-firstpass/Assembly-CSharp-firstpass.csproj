@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\r\PotK-Assembly-CSharp\CN\Assembly-CSharp-firstpass.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70439834-3704-4325-B19D-100BE6AF1798}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clipboard.cs" />
+    <Compile Include="CriAtomPlugin.cs" />
+    <Compile Include="CriAtomCueSheet.cs" />
+    <Compile Include="CriAtom.cs" />
+    <Compile Include="CriAtomListener.cs" />
+    <Compile Include="CriAtomAcfInfo.cs" />
+    <Compile Include="CriAtomServer.cs" />
+    <Compile Include="CriAtomSource.cs" />
+    <Compile Include="CriStructMemory`1.cs" />
+    <Compile Include="CriAtomEx.cs" />
+    <Compile Include="CriAtomExCategory.cs" />
+    <Compile Include="CriAtomExSequencer.cs" />
+    <Compile Include="CriAtomExAsr.cs" />
+    <Compile Include="CriAtomExLatencyEstimator.cs" />
+    <Compile Include="CriAtomEx3dListener.cs" />
+    <Compile Include="CriAtomEx3dSource.cs" />
+    <Compile Include="CriAtomExAcb.cs" />
+    <Compile Include="CriAtomExPlayer.cs" />
+    <Compile Include="CriAtomExPlayback.cs" />
+    <Compile Include="CriAtomExPlayerOutputAnalyzer.cs" />
+    <Compile Include="CriAtomExVoicePool.cs" />
+    <Compile Include="CriFsLoader.cs" />
+    <Compile Include="CriFsInstaller.cs" />
+    <Compile Include="CriFsBinder.cs" />
+    <Compile Include="CriFsRequest.cs" />
+    <Compile Include="CriFsLoadFileRequest.cs" />
+    <Compile Include="CriFsLoadAssetBundleRequest.cs" />
+    <Compile Include="CriFsInstallRequest.cs" />
+    <Compile Include="CriFsBindRequest.cs" />
+    <Compile Include="CriFsUtility.cs" />
+    <Compile Include="CriFsPlugin.cs" />
+    <Compile Include="CriFsServer.cs" />
+    <Compile Include="CriManaPlugin.cs" />
+    <Compile Include="CriManaMovieController.cs" />
+    <Compile Include="CriManaMovieControllerForUI.cs" />
+    <Compile Include="CriManaMovieMaterial.cs" />
+    <Compile Include="CriManaPlayer.cs" />
+    <Compile Include="CriWare.cs" />
+    <Compile Include="CriWareErrorHandler.cs" />
+    <Compile Include="CriFsConfig.cs" />
+    <Compile Include="CriAtomConfig.cs" />
+    <Compile Include="CriManaConfig.cs" />
+    <Compile Include="CriWareDecrypterConfig.cs" />
+    <Compile Include="CriWareInitializer.cs" />
+    <Compile Include="iTween.cs" />
+    <Compile Include="LanguageSelection.cs" />
+    <Compile Include="UIButton.cs" />
+    <Compile Include="UIButtonActivate.cs" />
+    <Compile Include="UIButtonColor.cs" />
+    <Compile Include="UIButtonKeys.cs" />
+    <Compile Include="UIButtonMessage.cs" />
+    <Compile Include="UIButtonOffset.cs" />
+    <Compile Include="UIButtonRotation.cs" />
+    <Compile Include="UIButtonScale.cs" />
+    <Compile Include="UICenterOnChild.cs" />
+    <Compile Include="UICenterOnClick.cs" />
+    <Compile Include="UIDragCamera.cs" />
+    <Compile Include="UIDragDropContainer.cs" />
+    <Compile Include="UIDragDropItem.cs" />
+    <Compile Include="UIDragDropRoot.cs" />
+    <Compile Include="UIDragObject.cs" />
+    <Compile Include="UIDragResize.cs" />
+    <Compile Include="UIDragScrollView.cs" />
+    <Compile Include="UIDraggableCamera.cs" />
+    <Compile Include="UIEventTrigger.cs" />
+    <Compile Include="UIForwardEvents.cs" />
+    <Compile Include="UIGrid.cs" />
+    <Compile Include="UIImageButton.cs" />
+    <Compile Include="UIKeyBinding.cs" />
+    <Compile Include="UIKeyNavigation.cs" />
+    <Compile Include="UIPlayAnimation.cs" />
+    <Compile Include="UIPlaySound.cs" />
+    <Compile Include="UIPlayTween.cs" />
+    <Compile Include="UIPopupList.cs" />
+    <Compile Include="UIProgressBar.cs" />
+    <Compile Include="UISavedOption.cs" />
+    <Compile Include="UIScrollBar.cs" />
+    <Compile Include="UIScrollView.cs" />
+    <Compile Include="UISlider.cs" />
+    <Compile Include="UISoundVolume.cs" />
+    <Compile Include="UITable.cs" />
+    <Compile Include="UIToggle.cs" />
+    <Compile Include="UIToggledComponents.cs" />
+    <Compile Include="UIToggledObjects.cs" />
+    <Compile Include="UIWidgetContainer.cs" />
+    <Compile Include="UIWrapContent.cs" />
+    <Compile Include="ActiveAnimation.cs" />
+    <Compile Include="BMFont.cs" />
+    <Compile Include="BMGlyph.cs" />
+    <Compile Include="BMSymbol.cs" />
+    <Compile Include="BetterList`1.cs" />
+    <Compile Include="ByteReader.cs" />
+    <Compile Include="EventDelegate.cs" />
+    <Compile Include="Localization.cs" />
+    <Compile Include="NGUIDebug.cs" />
+    <Compile Include="NGUIMath.cs" />
+    <Compile Include="NGUIText.cs" />
+    <Compile Include="NGUITools.cs" />
+    <Compile Include="RealTime.cs" />
+    <Compile Include="SpringPanel.cs" />
+    <Compile Include="UIDrawCall.cs" />
+    <Compile Include="UIEventListener.cs" />
+    <Compile Include="UIGeometry.cs" />
+    <Compile Include="UIRect.cs" />
+    <Compile Include="UIWidget.cs" />
+    <Compile Include="AnimatedAlpha.cs" />
+    <Compile Include="AnimatedColor.cs" />
+    <Compile Include="SpringPosition.cs" />
+    <Compile Include="TweenAlpha.cs" />
+    <Compile Include="TweenColor.cs" />
+    <Compile Include="TweenFOV.cs" />
+    <Compile Include="TweenHeight.cs" />
+    <Compile Include="TweenOrthoSize.cs" />
+    <Compile Include="TweenPosition.cs" />
+    <Compile Include="TweenRotation.cs" />
+    <Compile Include="TweenScale.cs" />
+    <Compile Include="TweenTransform.cs" />
+    <Compile Include="TweenVolume.cs" />
+    <Compile Include="TweenWidth.cs" />
+    <Compile Include="UITweener.cs" />
+    <Compile Include="UI2DSprite.cs" />
+    <Compile Include="UI2DSpriteAnimation.cs" />
+    <Compile Include="UIAnchor.cs" />
+    <Compile Include="UIAtlas.cs" />
+    <Compile Include="UICamera.cs" />
+    <Compile Include="UIFont.cs" />
+    <Compile Include="UIInput.cs" />
+    <Compile Include="UILabel.cs" />
+    <Compile Include="UILocalize.cs" />
+    <Compile Include="UIOrthoCamera.cs" />
+    <Compile Include="UIPanel.cs" />
+    <Compile Include="UIRoot.cs" />
+    <Compile Include="UISprite.cs" />
+    <Compile Include="UISpriteAnimation.cs" />
+    <Compile Include="UISpriteData.cs" />
+    <Compile Include="UIStretch.cs" />
+    <Compile Include="UITextList.cs" />
+    <Compile Include="UITexture.cs" />
+    <Compile Include="UITooltip.cs" />
+    <Compile Include="UIViewport.cs" />
+    <Compile Include="Arc4RandomNumberGenerator.cs" />
+    <Compile Include="SocketIOMessage.cs" />
+    <Compile Include="SocketIOConnection.cs" />
+    <Compile Include="Storage.cs" />
+    <Compile Include="UniWebViewEventProcessor.cs" />
+    <Compile Include="UniWebViewPlugin.cs" />
+    <Compile Include="meminfo.cs" />
+    <Compile Include="HTTP\BaseHTTP.cs" />
+    <Compile Include="HTTP\Headers.cs" />
+    <Compile Include="HTTP\HttpConnection.cs" />
+    <Compile Include="HTTP\HTTPException.cs" />
+    <Compile Include="HTTP\JsonSerializer.cs" />
+    <Compile Include="HTTP\Request.cs" />
+    <Compile Include="HTTP\Response.cs" />
+    <Compile Include="HTTP\URL.cs" />
+    <Compile Include="HTTP\WebSocket.cs" />
+    <Compile Include="HTTP\UniWeb.cs" />
+    <Compile Include="AnimationOrTween\Trigger.cs" />
+    <Compile Include="AnimationOrTween\Direction.cs" />
+    <Compile Include="AnimationOrTween\EnableCondition.cs" />
+    <Compile Include="AnimationOrTween\DisableCondition.cs" />
+    <Compile Include="gu3\LocalNotification.cs" />
+    <Compile Include="gu3\SocialKit.cs" />
+    <Compile Include="gu3\Device\DeviceManager.cs" />
+    <Compile Include="gu3\Device\FileManager.cs" />
+    <Compile Include="gu3\Utils\Zlib.cs" />
+    <Compile Include="gu3\Utils\ZlibFormat.cs" />
+    <Compile Include="gu3\Utils\ZlibCompressionLevel.cs" />
+    <Compile Include="gu3\Utils\ZlibCompress.cs" />
+    <Compile Include="gu3\Utils\ZlibDecompress.cs" />
+    <Compile Include="gu3\Utils\ZlibStream.cs" />
+    <Compile Include="gu3\File\FileManager.cs" />
+    <Compile Include="CriManaPlayerDetail\TextureHolder.cs" />
+    <Compile Include="CriManaPlayerDetail\TextureHolderByTexPtr.cs" />
+    <Compile Include="CriManaPlayerDetail\TextureHolderByTexPtrWithAlpha.cs" />
+    <Compile Include="CriMana\CodecType.cs" />
+    <Compile Include="CriMana\AlphaType.cs" />
+    <Compile Include="CriMana\AudioInfo.cs" />
+    <Compile Include="CriMana\MovieInfo.cs" />
+    <Compile Include="CriMana\FrameInfo.cs" />
+    <Compile Include="CriMana\EventPoint.cs" />
+    <Compile Include="CriMana\Player.cs" />
+    <Compile Include="CriMana\Detail\RendererResource.cs" />
+    <Compile Include="CriMana\Detail\RendererResourceFactory.cs" />
+    <Compile Include="CriMana\Detail\RendererResourceFactoryPriorityAttribute.cs" />
+    <Compile Include="CriMana\Detail\AutoResisterRendererResourceFactories.cs" />
+    <Compile Include="CriMana\Detail\RendererResourceAndroidH264Rgb.cs" />
+    <Compile Include="CriMana\Detail\RendererResourceSofdecPrimeYuv.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

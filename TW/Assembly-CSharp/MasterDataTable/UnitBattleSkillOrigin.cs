@@ -1,0 +1,54 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: MasterDataTable.UnitBattleSkillOrigin
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 1057B608-EE69-47D4-8399-FD66F6FD63A9
+// Assembly location: C:\r\PotK-Assembly-CSharp\TW\Assembly-CSharp.dll
+
+#nullable disable
+namespace MasterDataTable
+{
+  public class UnitBattleSkillOrigin
+  {
+    public UnitBattleSkillOrigin(object origin, BattleskillSkill skill)
+    {
+      this.origin_ = origin;
+      this.skill_ = skill;
+    }
+
+    public object origin_ { get; private set; }
+
+    public BattleskillSkill skill_ { get; private set; }
+
+    public bool IsOriginBasic => (object) this.origin_.GetType() == (object) typeof (UnitSkill);
+
+    public UnitSkill Basic => this.origin_ as UnitSkill;
+
+    public bool IsOriginLeaderBasic
+    {
+      get => (object) this.origin_.GetType() == (object) typeof (UnitLeaderSkill);
+    }
+
+    public UnitLeaderSkill LeaderBasic => this.origin_ as UnitLeaderSkill;
+
+    public bool IsOriginCharacterQuest
+    {
+      get => (object) this.origin_.GetType() == (object) typeof (UnitSkillCharacterQuest);
+    }
+
+    public UnitSkillCharacterQuest CharacterQuest => this.origin_ as UnitSkillCharacterQuest;
+
+    public bool IsOriginHarmonyQuest
+    {
+      get => (object) this.origin_.GetType() == (object) typeof (UnitSkillHarmonyQuest);
+    }
+
+    public UnitSkillHarmonyQuest HarmonyQuest => this.origin_ as UnitSkillHarmonyQuest;
+
+    public bool IsOriginEvolution
+    {
+      get => (object) this.origin_.GetType() == (object) typeof (UnitSkillEvolution);
+    }
+
+    public UnitSkillEvolution Evolution => this.origin_ as UnitSkillEvolution;
+  }
+}

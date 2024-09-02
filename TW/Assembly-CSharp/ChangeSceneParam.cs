@@ -1,0 +1,18 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: ChangeSceneParam
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 1057B608-EE69-47D4-8399-FD66F6FD63A9
+// Assembly location: C:\r\PotK-Assembly-CSharp\TW\Assembly-CSharp.dll
+
+using SM;
+using System.Collections.Generic;
+
+#nullable disable
+public class ChangeSceneParam
+{
+  public List<PlayerUnit> num_list;
+  public bool is_new;
+  public List<PlayerUnit> unit_data;
+  public Unit00499Scene.Mode mode;
+  public bool fromEarth;
+}

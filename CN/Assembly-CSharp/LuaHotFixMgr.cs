@@ -1,0 +1,21 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: LuaHotFixMgr
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 9C8288CC-5112-4EB9-B5CD-8D0227EBD883
+// Assembly location: C:\r\PotK-Assembly-CSharp\CN\Assembly-CSharp.dll
+
+using UnityEngine;
+
+#nullable disable
+public class LuaHotFixMgr : Singleton<LuaHotFixMgr>
+{
+  protected override void Initialize()
+  {
+  }
+
+  public void RefreshUsingLua()
+  {
+    string loadedLevelName = Application.loadedLevelName;
+    DenaLib.Singleton<GameLogic>.Instance.GetWindowStackManager().Show("UI/GamePage", loadedLevelName, 0, true, (object[]) null);
+  }
+}

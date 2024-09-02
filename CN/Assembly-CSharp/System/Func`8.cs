@@ -1,0 +1,18 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: System.Func`8
+// Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 9C8288CC-5112-4EB9-B5CD-8D0227EBD883
+// Assembly location: C:\r\PotK-Assembly-CSharp\CN\Assembly-CSharp.dll
+
+#nullable disable
+namespace System
+{
+  public delegate TResult Func<T1, T2, T3, T4, T5, T6, T7, TResult>(
+    T1 arg1,
+    T2 arg2,
+    T3 arg3,
+    T4 arg4,
+    T5 arg5,
+    T6 arg6,
+    T7 arg7);
+}
